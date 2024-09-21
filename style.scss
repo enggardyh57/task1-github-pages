@@ -1,0 +1,570 @@
+@font-face {
+  font-family: "Helvetica Neue Medium";
+  src: url(./font/HelveticaNeueMedium.otf);
+  font-family: "Helvetica Neue Thin";
+  src: url(./font/HelveticaNeueThin.otf);
+}
+$header-color: #222;
+$header-font-color: #ebebeb;
+$background-web: #f5f5f5;
+$background-section: #ffffff;
+$button-color: #327fc7;
+
+body {
+  height: 2000px;
+  background-color: $background-web;
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue Medium", sans-serif;
+}
+// Header awal
+header {
+  // padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $header-color;
+  color: $header-font-color;
+  height: 700px;
+  position: relative;
+  h2,
+  span {
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  span {
+    font-family: "Kanit";
+    margin-right: -5px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  //   .hero {
+  //     background-image: url(./img/hero.png);
+  //     background-size: cover;
+  //     height: 300px;
+  //     z-index: 999;
+  //   }
+  a {
+    color: $header-font-color;
+  }
+  p {
+    font-family: "Helvetica Neue Thin", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    font-size: 21px;
+  }
+  button {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #3b3b3b;
+    color: #d5d5d5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    color: #ebebeb;
+  }
+}
+
+// Header akhir
+
+// Nav awal
+nav {
+  width: 60%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: 53px;
+    font-weight: normal;
+    font-weight: bold;
+    text-align: center;
+    font-weight: 400;
+  }
+  p {
+    font-family: "Helvetica Neue Thin";
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .klik {
+    // justify-content: space-between;
+    margin-top: 20px;
+  }
+  .active {
+    padding: 10px;
+    background-color: $button-color;
+    border: none;
+    color: $background-web;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .link {
+    padding: 10px;
+    background-color: $background-section;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .link:hover {
+    border: 1px solid $button-color;
+  }
+}
+// Nav akhir
+
+// section create repo awal
+section.create-repo {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  border: 1px solid rgb(121, 121, 121, 0.5);
+  background-color: $background-section;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+
+  main {
+    width: 50%;
+    margin-right: 50px;
+    h4 {
+      font-size: 35px;
+      font-weight: normal;
+    }
+    p.link-besar {
+      font-size: 18px;
+      font-style: italic;
+      margin: 30px 0;
+    }
+    a {
+      color: $button-color;
+    }
+  }
+  aside {
+    width: 30%;
+  }
+  .number {
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    background-color: $button-color;
+    color: $background-section;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    left: -15px;
+  }
+}
+// akhir section create repo
+
+// Git client awal
+section.git-client {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(121, 121, 121, 0.5);
+  background-color: $background-section;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
+  position: relative;
+  h4 {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 100;
+  }
+  .klik {
+    // justify-content: space-between;
+    margin-top: 20px;
+  }
+  .active {
+    padding: 10px;
+    background-color: $button-color;
+    border: none;
+    color: $background-web;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .link {
+    padding: 10px;
+    background-color: $background-section;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .link:hover {
+    border: 1px solid $button-color;
+  }
+  .number {
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    background-color: $button-color;
+    color: $background-section;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    left: -15px;
+  }
+}
+// Git client akhir
+
+// Clone repo awal
+.clone-repo {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(121, 121, 121, 0.5);
+  background-color: $background-section;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
+  position: relative;
+  h4,
+  p {
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 35px;
+    font-weight: 100;
+    margin-bottom: 30px;
+  }
+  .number {
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    background-color: $button-color;
+    color: $background-section;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    left: -15px;
+  }
+}
+// Clone repo akhir
+
+// cd project awal
+section.cd-project {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(121, 121, 121, 0.5);
+  background-color: $background-section;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
+  position: relative;
+  h4,
+  p {
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 35px;
+    font-weight: 100;
+    margin-bottom: 30px;
+  }
+  .number {
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    background-color: $button-color;
+    color: $background-section;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    left: -15px;
+  }
+}
+// cd project akhir
+
+// push repo awal
+
+.push-repo {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(121, 121, 121, 0.5);
+  background-color: $background-section;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
+  position: relative;
+  h4,
+  p {
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 35px;
+    font-weight: 100;
+    margin-bottom: 30px;
+  }
+  .number {
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    background-color: $button-color;
+    color: $background-section;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    left: -15px;
+  }
+}
+// akhir push akhir
+
+// process done awal
+.process-done {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(121, 121, 121, 0.5);
+  background-color: $background-section;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
+  position: relative;
+  h4,
+  p {
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 35px;
+    font-weight: 100;
+    margin-bottom: 30px;
+  }
+  .icon-done {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #e5e2e2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    span {
+      font-size: 70px;
+      color: $button-color;
+    }
+  }
+  .number {
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    background-color: $button-color;
+    color: #ebebeb;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    left: -15px;
+  }
+}
+
+// process done akhir
+hr {
+  border: none;
+  height: 2px;
+  background-color: rgba(201, 201, 201, 0.5);
+}
+// Info awal
+section.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $background-section;
+  padding: 100px;
+  h2 {
+    font-size: 53px;
+    font-weight: 100;
+    text-align: center;
+    margin: 100px 0;
+  }
+  main {
+    display: flex;
+    .blog,
+    .custom,
+    .book {
+      text-align: center;
+      a {
+        text-decoration: none;
+        color: $button-color;
+      }
+      .icon-info {
+        display: inline-block;
+        margin-bottom: 30px;
+      }
+    }
+    h4 {
+      font-size: 30px;
+      font-weight: 100;
+      color: $button-color;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    .icon-info {
+      padding: 20px;
+      border: 1px solid #e5e2e2;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      span {
+        font-size: 50px;
+        color: $button-color;
+      }
+      span:hover {
+        font-size: 53px;
+      }
+    }
+  }
+}
+// Info akhir
+
+// Footer awal
+footer {
+  background-color: $background-section;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  font-size: 12px;
+  height: 50px;
+  a {
+    text-decoration: none;
+    color: $button-color;
+  }
+  .kiri {
+    display: flex;
+    justify-content: space-evenly;
+    a {
+      margin: 0 10px;
+    }
+  }
+  .tengah {
+    font-size: 30px;
+  }
+  .kanan {
+    a {
+      margin: 0 10px;
+    }
+  }
+}
+// Footer akhir
+
+// Responsive
+// Responsive Design
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  nav {
+    width: 90%;
+  }
+
+  section.create-repo,
+  section.git-client,
+  section.clone-repo,
+  section.cd-project,
+  section.push-repo,
+  section.process-done {
+    width: 100%;
+    padding: 20px;
+    img {
+      margin: 10px 0;
+      width: 400px;
+    }
+    .number {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 10px;
+  }
+  section.create-repo{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+      margin-left: -150px;
+    }
+  }
+  section.info{
+    .blog,.custom,.book{
+      margin-top: 60px;
+    }
+  }
+}

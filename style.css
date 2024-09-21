@@ -1,0 +1,538 @@
+@font-face {
+  font-family: "Helvetica Neue Medium";
+  src: url(./font/HelveticaNeueMedium.otf);
+  font-family: "Helvetica Neue Thin";
+  src: url(./font/HelveticaNeueThin.otf);
+}
+body {
+  height: 2000px;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue Medium", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  color: #ebebeb;
+  height: 700px;
+  position: relative;
+}
+header h2,
+header span {
+  text-align: center;
+  margin: 20px;
+  cursor: pointer;
+  font-size: 30px;
+}
+header span {
+  font-family: "Kanit";
+  margin-right: -5px;
+}
+header h1 {
+  font-size: 48px;
+}
+header a {
+  color: #ebebeb;
+}
+header p {
+  font-family: "Helvetica Neue Thin", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-size: 21px;
+}
+header button {
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #3b3b3b;
+  color: #d5d5d5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+header button:hover {
+  color: #ebebeb;
+}
+
+nav {
+  width: 60%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav h2 {
+  font-size: 53px;
+  font-weight: normal;
+  font-weight: bold;
+  text-align: center;
+  font-weight: 400;
+}
+nav p {
+  font-family: "Helvetica Neue Thin";
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+}
+nav .klik {
+  margin-top: 20px;
+}
+nav .active {
+  padding: 10px;
+  background-color: #327fc7;
+  border: none;
+  color: #f5f5f5;
+  border-radius: 5px;
+  cursor: pointer;
+}
+nav .link {
+  padding: 10px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+nav .link:hover {
+  border: 1px solid #327fc7;
+}
+
+section.create-repo {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  border: 1px solid rgba(121, 121, 121, 0.5);
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+section.create-repo main {
+  width: 50%;
+  margin-right: 50px;
+}
+section.create-repo main h4 {
+  font-size: 35px;
+  font-weight: normal;
+}
+section.create-repo main p.link-besar {
+  font-size: 18px;
+  font-style: italic;
+  margin: 30px 0;
+}
+section.create-repo main a {
+  color: #327fc7;
+}
+section.create-repo aside {
+  width: 30%;
+}
+section.create-repo .number {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  background-color: #327fc7;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  top: -20px;
+  left: -15px;
+}
+
+section.git-client {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(121, 121, 121, 0.5);
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
+  position: relative;
+}
+section.git-client h4 {
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 100;
+}
+section.git-client .klik {
+  margin-top: 20px;
+}
+section.git-client .active {
+  padding: 10px;
+  background-color: #327fc7;
+  border: none;
+  color: #f5f5f5;
+  border-radius: 5px;
+  cursor: pointer;
+}
+section.git-client .link {
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+section.git-client .link:hover {
+  border: 1px solid #327fc7;
+}
+section.git-client .number {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  background-color: #327fc7;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  top: -20px;
+  left: -15px;
+}
+
+.clone-repo {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(121, 121, 121, 0.5);
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
+  position: relative;
+}
+.clone-repo h4,
+.clone-repo p {
+  text-align: center;
+}
+.clone-repo p {
+  font-size: 18px;
+}
+.clone-repo h4 {
+  font-size: 35px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+.clone-repo .number {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  background-color: #327fc7;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  top: -20px;
+  left: -15px;
+}
+
+section.cd-project {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(121, 121, 121, 0.5);
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
+  position: relative;
+}
+section.cd-project h4,
+section.cd-project p {
+  text-align: center;
+}
+section.cd-project p {
+  font-size: 18px;
+}
+section.cd-project h4 {
+  font-size: 35px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+section.cd-project .number {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  background-color: #327fc7;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  top: -20px;
+  left: -15px;
+}
+
+.push-repo {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(121, 121, 121, 0.5);
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
+  position: relative;
+}
+.push-repo h4,
+.push-repo p {
+  text-align: center;
+}
+.push-repo p {
+  font-size: 18px;
+}
+.push-repo h4 {
+  font-size: 35px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+.push-repo .number {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  background-color: #327fc7;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  top: -20px;
+  left: -15px;
+}
+
+.process-done {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(121, 121, 121, 0.5);
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
+  position: relative;
+}
+.process-done h4,
+.process-done p {
+  text-align: center;
+}
+.process-done p {
+  font-size: 18px;
+}
+.process-done h4 {
+  font-size: 35px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+.process-done .icon-done {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #e5e2e2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.process-done .icon-done span {
+  font-size: 70px;
+  color: #327fc7;
+}
+.process-done .number {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  background-color: #327fc7;
+  color: #ebebeb;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: -20px;
+  left: -15px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: rgba(201, 201, 201, 0.5);
+}
+
+section.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 100px;
+}
+section.info h2 {
+  font-size: 53px;
+  font-weight: 100;
+  text-align: center;
+  margin: 100px 0;
+}
+section.info main {
+  display: flex;
+}
+section.info main .blog,
+section.info main .custom,
+section.info main .book {
+  text-align: center;
+}
+section.info main .blog a,
+section.info main .custom a,
+section.info main .book a {
+  text-decoration: none;
+  color: #327fc7;
+}
+section.info main .blog .icon-info,
+section.info main .custom .icon-info,
+section.info main .book .icon-info {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+section.info main h4 {
+  font-size: 30px;
+  font-weight: 100;
+  color: #327fc7;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+section.info main .icon-info {
+  padding: 20px;
+  border: 1px solid #e5e2e2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+section.info main .icon-info span {
+  font-size: 50px;
+  color: #327fc7;
+}
+section.info main .icon-info span:hover {
+  font-size: 53px;
+}
+
+footer {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  font-size: 12px;
+  height: 50px;
+}
+footer a {
+  text-decoration: none;
+  color: #327fc7;
+}
+footer .kiri {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .kiri a {
+  margin: 0 10px;
+}
+footer .tengah {
+  font-size: 30px;
+}
+footer .kanan a {
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+    height: auto;
+    padding: 20px 10px;
+  }
+  nav {
+    width: 90%;
+  }
+  section.create-repo,
+  section.git-client,
+  section.clone-repo,
+  section.cd-project,
+  section.push-repo,
+  section.process-done {
+    width: 100%;
+    padding: 20px;
+  }
+  section.create-repo img,
+  section.git-client img,
+  section.clone-repo img,
+  section.cd-project img,
+  section.push-repo img,
+  section.process-done img {
+    margin: 10px 0;
+    width: 400px;
+  }
+  section.create-repo .number,
+  section.git-client .number,
+  section.clone-repo .number,
+  section.cd-project .number,
+  section.push-repo .number,
+  section.process-done .number {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    flex-direction: column;
+    padding: 10px;
+  }
+  section.create-repo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.create-repo img {
+    margin-left: -150px;
+  }
+  section.info .blog, section.info .custom, section.info .book {
+    margin-top: 60px;
+  }
+}/*# sourceMappingURL=style.css.map */
